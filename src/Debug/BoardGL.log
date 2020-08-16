@@ -1,0 +1,11 @@
+﻿  main.cpp
+F:\C++\BoardGL\BoardGL\Headers\Utils\Utils.h(30,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\C++\BoardGL\BoardGL\Headers\Utils\Utils.h(30,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\C++\BoardGL\BoardGL\Headers\Utils\Utils.h(73,70): warning C4244: 'return': conversion from '_Rep' to 'double', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+F:\C++\BoardGL\BoardGL\Headers\Physics Engine\Params.h(2,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+F:\C++\BoardGL\BoardGL\Headers\Physics Engine\Params.h(4,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+  BoardGL.vcxproj -> F:\C++\BoardGL\Debug\BoardGL.exe

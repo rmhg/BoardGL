@@ -1,0 +1,10 @@
+﻿  main.cpp
+F:\C++\BoardGL\BoardGL\Headers\Utils\Utils.h(22,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\C++\BoardGL\BoardGL\Headers\Utils\Utils.h(22,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  1171 of 1309 functions (89.5%) were compiled, the rest were copied from previous compilation.
+    217 functions were new in current compilation
+    33 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  BoardGL.vcxproj -> F:\C++\BoardGL\Release\BoardGL.exe

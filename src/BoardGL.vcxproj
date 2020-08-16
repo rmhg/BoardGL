@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{14CF596F-8A40-4E19-9D85-718490B0E42C}</ProjectGuid>
+    <RootNamespace>BoardGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\C++\BoardGL\BoardGL\Headers;F:\C++\BoardGL\BoardGL\Dependency\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>F:\C++\BoardGL\BoardGL\Dependency\lib\x86\glfw;F:\C++\BoardGL\BoardGL\Dependency\lib\x86\freetype;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:[LIBCMT,MSVCRT]</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\C++\BoardGL\BoardGL\Headers;F:\C++\BoardGL\BoardGL\Dependency\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>F:\C++\BoardGL\BoardGL\Dependency\lib\x64\freetype;F:\C++\BoardGL\BoardGL\Dependency\lib\x64\glfw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\C++\BoardGL\BoardGL\Headers;F:\C++\BoardGL\BoardGL\Dependency\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>F:\C++\BoardGL\BoardGL\Dependency\lib\x86\glfw;F:\C++\BoardGL\BoardGL\Dependency\lib\x86\freetype;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:[LIBCMT,MSVCRT]</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\C++\BoardGL\BoardGL\Headers;F:\C++\BoardGL\BoardGL\Dependency\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>F:\C++\BoardGL\BoardGL\Dependency\lib\x64\freetype;F:\C++\BoardGL\BoardGL\Dependency\lib\x64\glfw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Dependency\glad.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependency\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="Dependency\include\freetype\config\ftheader.h" />
+    <ClInclude Include="Dependency\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="Dependency\include\freetype\config\ftoption.h" />
+    <ClInclude Include="Dependency\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="Dependency\include\freetype\freetype.h" />
+    <ClInclude Include="Dependency\include\freetype\ftadvanc.h" />
+    <ClInclude Include="Dependency\include\freetype\ftbbox.h" />
+    <ClInclude Include="Dependency\include\freetype\ftbdf.h" />
+    <ClInclude Include="Dependency\include\freetype\ftbitmap.h" />
+    <ClInclude Include="Dependency\include\freetype\ftbzip2.h" />
+    <ClInclude Include="Dependency\include\freetype\ftcache.h" />
+    <ClInclude Include="Dependency\include\freetype\ftchapters.h" />
+    <ClInclude Include="Dependency\include\freetype\ftcid.h" />
+    <ClInclude Include="Dependency\include\freetype\ftcolor.h" />
+    <ClInclude Include="Dependency\include\freetype\ftdriver.h" />
+    <ClInclude Include="Dependency\include\freetype\fterrdef.h" />
+    <ClInclude Include="Dependency\include\freetype\fterrors.h" />
+    <ClInclude Include="Dependency\include\freetype\ftfntfmt.h" />
+    <ClInclude Include="Dependency\include\freetype\ftgasp.h" />
+    <ClInclude Include="Dependency\include\freetype\ftglyph.h" />
+    <ClInclude Include="Dependency\include\freetype\ftgxval.h" />
+    <ClInclude Include="Dependency\include\freetype\ftgzip.h" />
+    <ClInclude Include="Dependency\include\freetype\ftimage.h" />
+    <ClInclude Include="Dependency\include\freetype\ftincrem.h" />
+    <ClInclude Include="Dependency\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="Dependency\include\freetype\ftlist.h" />
+    <ClInclude Include="Dependency\include\freetype\ftlzw.h" />
+    <ClInclude Include="Dependency\include\freetype\ftmac.h" />
+    <ClInclude Include="Dependency\include\freetype\ftmm.h" />
+    <ClInclude Include="Dependency\include\freetype\ftmodapi.h" />
+    <ClInclude Include="Dependency\include\freetype\ftmoderr.h" />
+    <ClInclude Include="Dependency\include\freetype\ftotval.h" />
+    <ClInclude Include="Dependency\include\freetype\ftoutln.h" />
+    <ClInclude Include="Dependency\include\freetype\ftparams.h" />
+    <ClInclude Include="Dependency\include\freetype\ftpfr.h" />
+    <ClInclude Include="Dependency\include\freetype\ftrender.h" />
+    <ClInclude Include="Dependency\include\freetype\ftsizes.h" />
+    <ClInclude Include="Dependency\include\freetype\ftsnames.h" />
+    <ClInclude Include="Dependency\include\freetype\ftstroke.h" />
+    <ClInclude Include="Dependency\include\freetype\ftsynth.h" />
+    <ClInclude Include="Dependency\include\freetype\ftsystem.h" />
+    <ClInclude Include="Dependency\include\freetype\fttrigon.h" />
+    <ClInclude Include="Dependency\include\freetype\fttypes.h" />
+    <ClInclude Include="Dependency\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\autohint.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\cffotypes.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\cfftypes.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftcalc.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftdebug.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftdrv.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftgloadr.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\fthash.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftmemory.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftobjs.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftpsprop.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftrfork.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftserv.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftstream.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\fttrace.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\ftvalid.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\internal.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\psaux.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\pshints.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svcfftl.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svcid.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svfntfmt.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svgldict.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svgxval.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svkern.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svmetric.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svmm.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svotval.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svpfr.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svprop.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svtteng.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\sfnt.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\t1types.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\tttypes.h" />
+    <ClInclude Include="Dependency\include\freetype\internal\wofftypes.h" />
+    <ClInclude Include="Dependency\include\freetype\t1tables.h" />
+    <ClInclude Include="Dependency\include\freetype\ttnameid.h" />
+    <ClInclude Include="Dependency\include\freetype\tttables.h" />
+    <ClInclude Include="Dependency\include\freetype\tttags.h" />
+    <ClInclude Include="Dependency\include\ft2build.h" />
+    <ClInclude Include="Dependency\include\glad\glad.h" />
+    <ClInclude Include="Dependency\include\GLFW\glfw3.h" />
+    <ClInclude Include="Dependency\include\GLFW\glfw3native.h" />
+    <ClInclude Include="Dependency\include\KHR\khrplatform.h" />
+    <ClInclude Include="Headers\Core\Camera.h" />
+    <ClInclude Include="Headers\Core\Drawing\Primitive\2D\Circle.h" />
+    <ClInclude Include="Headers\Core\Drawing\Primitive\3D\Cube.h" />
+    <ClInclude Include="Headers\Core\Drawing\Primitive\3D\Sphere.h" />
+    <ClInclude Include="Headers\Core\Drawing\Primitive\Drawable.h" />
+    <ClInclude Include="Headers\Core\Drawing\Primitive\2D\Line.h" />
+    <ClInclude Include="Headers\Core\Drawing\Primitive\2D\Rectangle.h" />
+    <ClInclude Include="Headers\Core\Drawing\Primitive\2D\Triangle.h" />
+    <ClInclude Include="Headers\Deprecated\Shape.h" />
+    <ClInclude Include="Headers\Core\Buffers\VertexBuffer.h" />
+    <ClInclude Include="Headers\Physics Engine\Params.h" />
+    <ClInclude Include="Headers\Utils\impl_vector.h" />
+    <ClInclude Include="Headers\Utils\Logger.h" />
+    <ClInclude Include="Headers\Physics Engine\Collision.h" />
+    <ClInclude Include="Headers\Physics Engine\PhysicsBuffer.h" />
+    <ClInclude Include="Headers\Physics Engine\DynamicObject.h" />
+    <ClInclude Include="Headers\Physics Engine\PhysicDrawable.h" />
+    <ClInclude Include="Headers\Utils\FileInterface.h" />
+    <ClInclude Include="Headers\Utils\G_Time.h" />
+    <ClInclude Include="Headers\Utils\OBJLoader.h" />
+    <ClInclude Include="Headers\Core\Shader\RawShader.h" />
+    <ClInclude Include="Headers\Core\Drawing\Text\TextRenderer.h" />
+    <ClInclude Include="Headers\Core\Buffers\DrawBuffer.h" />
+    <ClInclude Include="Headers\Core\Drawing\Text\FontLoader.h" />
+    <ClInclude Include="Headers\Core\Drawing\Texture\TextureLoader.h" />
+    <ClInclude Include="Headers\Core\Buffers\VertexArray.h" />
+    <ClInclude Include="Headers\Extern\STB\stb_image.h" />
+    <ClInclude Include="Headers\Extern\STB\stb_use.h" />
+    <ClInclude Include="Headers\Global.h" />
+    <ClInclude Include="Headers\Core\Drawing\Texture\Texture.h" />
+    <ClInclude Include="Headers\Extern\stb_image.h" />
+    <ClInclude Include="Headers\Utils\FileParser.h" />
+    <ClInclude Include="Headers\Utils\Matrix.h" />
+    <ClInclude Include="Headers\Utils\NumParser.h" />
+    <ClInclude Include="Headers\Utils\SIMD API\SIMD.h" />
+    <ClInclude Include="Headers\Utils\Utils.h" />
+    <ClInclude Include="Headers\Utils\Transform.h" />
+    <ClInclude Include="Headers\Utils\Vecs.h" />
+    <ClInclude Include="Headers\Console.h" />
+    <ClInclude Include="Headers\Deprecated\Buffer.h" />
+    <ClInclude Include="Headers\Core\Shader\Shaders.h" />
+    <ClInclude Include="Headers\Core\Exceptions\Error_Handling.h" />
+    <ClInclude Include="Headers\Utils\File2String.h" />
+    <ClInclude Include="Headers\Utils\vecVals.h" />
+    <ClInclude Include="Headers\Window\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Headers\Shaders\frag.fshd" />
+    <None Include="Headers\Shaders\vert.vshd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Dependency\lib\x64\glfw\glfw3.lib" />
+    <Library Include="Dependency\lib\x86\freetype\freetype.lib" />
+    <Library Include="Dependency\lib\x86\glfw\glfw3.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\awesomeface.png" />
+    <Image Include="Res\bird.png" />
+    <Image Include="Res\Camra.png" />
+    <Image Include="Res\GroundTexture.jpg" />
+    <Image Include="Res\M.jpg" />
+    <Image Include="Res\M.png" />
+    <Image Include="Res\WoodTexture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Res\arial.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

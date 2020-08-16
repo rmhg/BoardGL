@@ -1,0 +1,22 @@
+#version 330 core
+#define MAX_SLOT 10
+out vec4 FragColor;
+
+in vec4 Colors;
+in vec2 texCoord;
+in float index;
+in vec3 pos;
+
+uniform sampler2D texturer[MAX_SLOT];
+float WINDOW_WIDTH = 1280.0f;
+float WINDOW_HEIGHT = 720.0f;
+
+vec2 getPos(){
+     return vec2((gl_FragCoord.x/WINDOW_WIDTH - 0.5) * 2,(0.5 - gl_FragCoord.y/WINDOW_HEIGHT) * 2);
+}
+
+
+void main()
+{
+     FragColor = Colors + texture(texturer[int(index) - 1], texCoord)* vec4((index != 0));
+}
